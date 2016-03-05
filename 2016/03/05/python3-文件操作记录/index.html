@@ -58,21 +58,30 @@
 
 
 <meta name="description" content="python3 文件操作
-读文件
-  123with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()">
+读写文件
+  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
+
+文件不存在才能写入
+   可以在 open() 函数中使用 x 模式来代替 w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3 文件操作">
 <meta property="og:url" content="http://hfloveyy.github.io/2016/03/05/python3-文件操作记录/index.html">
 <meta property="og:site_name" content="my home">
 <meta property="og:description" content="python3 文件操作
-读文件
-  123with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()">
-<meta property="og:updated_time" content="2016-03-05T10:03:31.658Z">
+读写文件
+  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
+
+文件不存在才能写入
+   可以在 open() 函数中使用 x 模式来代替 w">
+<meta property="og:updated_time" content="2016-03-05T11:06:04.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python3 文件操作">
 <meta name="twitter:description" content="python3 文件操作
-读文件
-  123with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()">
+读写文件
+  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
+
+文件不存在才能写入
+   可以在 open() 函数中使用 x 模式来代替 w">
 
 
 
@@ -250,8 +259,12 @@
 
       
         <h1 id="python3-文件操作"><a href="#python3-文件操作" class="headerlink" title="python3 文件操作"></a>python3 文件操作</h1><ul>
-<li><p>读文件</p>
-  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'rt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br></pre></td></tr></table></figure></li>
+<li><p>读写文件</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'rt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">text = <span class="string">'some words'</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'wt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.write(text)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件不存在才能写入</p>
+<p>   可以在 open() 函数中使用 x 模式来代替 w 模式的方法来解决这个问题</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'xt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
