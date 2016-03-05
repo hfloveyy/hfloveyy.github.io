@@ -73,7 +73,7 @@
 
 文件不存在才能写入
    可以在 open() 函数中使用 x 模式来代替 w">
-<meta property="og:updated_time" content="2016-03-05T11:06:04.573Z">
+<meta property="og:updated_time" content="2016-03-05T11:10:01.513Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python3 文件操作">
 <meta name="twitter:description" content="python3 文件操作
@@ -264,7 +264,7 @@
 </li>
 <li><p>文件不存在才能写入</p>
 <p>   可以在 open() 函数中使用 x 模式来代替 w 模式的方法来解决这个问题</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'xt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'xt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.write(<span class="string">'hello world!\n'</span>)</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
