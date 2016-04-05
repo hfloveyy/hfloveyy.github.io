@@ -57,31 +57,28 @@
 
 
 
-<meta name="description" content="python3 文件操作
-读写文件
-  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
-
-文件不存在才能写入
-   可以在 open() 函数中使用 x 模式来代替 w">
+<meta name="description" content="###1、安装python3 64位
+###2、安装virtualenvpip install virtualenv
+###3、启动virtualenv Script/activate.bat
+###4、（env）pip install flask
+###5、编写wsgi.wsgiimport syssys.path.insert(0,’c:/web’)sys.path.insert(0,’c:\">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python3 文件操作">
-<meta property="og:url" content="http://hfloveyy.github.io/2016/03/05/python3-文件操作记录/index.html">
+<meta property="og:title" content="在windows下部署flask">
+<meta property="og:url" content="http://hfloveyy.github.io/2016/04/05/在windows下部署flask-1/index.html">
 <meta property="og:site_name" content="my home">
-<meta property="og:description" content="python3 文件操作
-读写文件
-  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
-
-文件不存在才能写入
-   可以在 open() 函数中使用 x 模式来代替 w">
-<meta property="og:updated_time" content="2016-03-05T11:10:01.513Z">
+<meta property="og:description" content="###1、安装python3 64位
+###2、安装virtualenvpip install virtualenv
+###3、启动virtualenv Script/activate.bat
+###4、（env）pip install flask
+###5、编写wsgi.wsgiimport syssys.path.insert(0,’c:/web’)sys.path.insert(0,’c:\">
+<meta property="og:updated_time" content="2016-04-05T11:31:04.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python3 文件操作">
-<meta name="twitter:description" content="python3 文件操作
-读写文件
-  12345678with open(&apos;somefile.txt&apos;, &apos;rt&apos;) as f:	data = f.read()text = &apos;some words&apos;with open(&apos;somefile.txt&apos;, &apos;wt&apos;) as f:	data = f.write(text)
-
-文件不存在才能写入
-   可以在 open() 函数中使用 x 模式来代替 w">
+<meta name="twitter:title" content="在windows下部署flask">
+<meta name="twitter:description" content="###1、安装python3 64位
+###2、安装virtualenvpip install virtualenv
+###3、启动virtualenv Script/activate.bat
+###4、（env）pip install flask
+###5、编写wsgi.wsgiimport syssys.path.insert(0,’c:/web’)sys.path.insert(0,’c:\">
 
 
 
@@ -99,7 +96,7 @@
   };
 </script>
 
-  <title> python3 文件操作 | my home </title>
+  <title> 在windows下部署flask | my home </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +216,7 @@
             
             
               
-                python3 文件操作
+                在windows下部署flask
               
             
           </h1>
@@ -231,8 +228,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-05T17:32:05+08:00" content="2016-03-05">
-              2016-03-05
+            <time itemprop="dateCreated" datetime="2016-04-05T19:02:22+08:00" content="2016-04-05">
+              2016-04-05
             </time>
           </span>
 
@@ -258,14 +255,19 @@
       
 
       
-        <h1 id="python3-文件操作"><a href="#python3-文件操作" class="headerlink" title="python3 文件操作"></a>python3 文件操作</h1><ul>
-<li><p>读写文件</p>
-  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'rt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">text = <span class="string">'some words'</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'wt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.write(text)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文件不存在才能写入</p>
-<p>   可以在 open() 函数中使用 x 模式来代替 w 模式的方法来解决这个问题</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>, <span class="string">'xt'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.write(<span class="string">'hello world!\n'</span>)</span><br></pre></td></tr></table></figure></li>
-</ul>
+        <p>###1、安装python3 64位</p>
+<p>###2、安装virtualenv<br>pip install virtualenv</p>
+<p>###3、启动virtualenv Script/activate.bat</p>
+<p>###4、（env）pip install flask</p>
+<p>###5、编写wsgi.wsgi<br>import sys<br>sys.path.insert(0,’c:/web’)<br>sys.path.insert(0,’c:\web\env\lib\site-packages’)<br>from main import app</p>
+<p>application = app </p>
+<p>###6、安装apache 64 vc11</p>
+<p>###7、下载mod_wsgi.so（必须对应版本） copy到Apache24\modules文件夹下</p>
+<p>###8、配置http.conf<br>LoadModule wsgi_module modules/mod_wsgi.so</p>
+<p>Include conf/extra/httpd-vhosts.conf</p>
+<p>###9、配置httpd-vhosts.conf</p>
+<virtualhost *:5000=""><br>    WSGIScriptAlias / c:\web\wsgi.wsgi<br>    #DocumentRoot c:\web<br>    <directory "c:\web"=""><br>        Require all granted<br>        Require host ip<br>    </directory><br></virtualhost>  
+
 
       
     </div>
@@ -283,12 +285,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/05/python3-文件操作记录/" rel="next" title="python3 文件操作">
+                <i class="fa fa-chevron-left"></i> python3 文件操作
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/05/在windows下部署flask-1/" rel="prev" title="在windows下部署flask">
-                在windows下部署flask <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/05/1/" rel="prev" title="1">
+                1 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -393,7 +399,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python3-文件操作"><span class="nav-number">1.</span> <span class="nav-text">python3 文件操作</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
